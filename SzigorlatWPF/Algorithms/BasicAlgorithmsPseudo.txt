@@ -1,0 +1,10 @@
+﻿Eljárás összegzés (s, n, sum)
+ változó i: egész
+ összeg:= egész
+ összeg:= egész
+  ciklus i=0 n-1-ig 1-esével
+	összeg+=s[i]
+  ciklus vége
+eljárás vége
+
+END.
