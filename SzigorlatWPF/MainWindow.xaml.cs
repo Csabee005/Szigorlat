@@ -44,7 +44,10 @@ namespace SzigorlatWPF
         {
             Output.Text += text + "\n";
         }
-
+        public void ResetOutput()
+        {
+            Output.Text = "";
+        }
 
         public void LoadBasicAlgos()
         {
@@ -115,9 +118,12 @@ namespace SzigorlatWPF
         private void RunAlgo_Click(object sender, RoutedEventArgs e)
         {
             if (BasicAlgos.SelectedIndex < 0) return;
+            ResetOutput();
+            code.ResetText();
+            pseudo.ResetText();
             string header = BasicAlgos.Items[BasicAlgos.SelectedIndex].ToString();
             Algorithm a = algorithms.Find(i => i.Title == header);
-            a.Run();
+            a.Load(code, pseudo, this, ac);
         }
     }
 }

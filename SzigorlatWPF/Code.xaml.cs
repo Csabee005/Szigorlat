@@ -23,9 +23,13 @@ namespace SzigorlatWPF
         {
             InitializeComponent();
         }
-        public void AddText(string text)
+        public new void AddText(string text)
         {
             CodeBox.Text = text;
+        }
+        public void ResetText()
+        {
+            CodeBox.Text = "";
         }
     }
 }

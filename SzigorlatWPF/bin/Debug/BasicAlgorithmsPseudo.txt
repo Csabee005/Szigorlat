@@ -8,3 +8,15 @@
 eljárás vége
 
 END.
+eljárás lineáris keresés(s, n, f)
+ változó i: egész
+ f:= elemtípus
+ index:=egész
+ ciklus i=0-tól n-1-ig 1-esével
+  ha s[i]=f akkor
+   index:=i
+  elágazás vége
+ ciklus vége
+eljárás vége
+
+END.

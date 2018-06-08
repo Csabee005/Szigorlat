@@ -47,12 +47,9 @@ namespace SzigorlatWPF
                     return null;
                 case "Összegzés tétele":
                     return ac.SumFunc;
+                case "Lineáris keresés":
+                    return ac.LinearSearch;
             }
-        }
-
-        public void Run()
-        {
-            algo.Invoke();
         }
     }
 }

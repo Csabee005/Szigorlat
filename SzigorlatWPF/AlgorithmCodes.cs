@@ -27,6 +27,15 @@ namespace SzigorlatWPF
             }
             return sum;
         }
+        public int LinearSearch()
+        {
+            int index = -1;
+            for (int i = 0; i < array.Length; i++)
+            {
+                if (array[i] == 5) index = i; //Hányadik elem az ötös. -1 ha nincs ötös.
+            }
+            return index;
+        }
         public string GetArrayString()
         {
             StringBuilder sb = new StringBuilder();
